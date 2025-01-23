@@ -1,4 +1,5 @@
 .cards {
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   padding: 50px 40px;
@@ -22,7 +23,7 @@
   transition-duration: 300ms;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   &__img {
@@ -33,13 +34,13 @@
   }
 
   &__name {
-    width: 166px;
     height: 36px;
     margin: 0 0 4px;
     color: $card-main-text-color;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
+    transition-duration: 300ms;
 
     .card:hover & {
       color: $card-transition-text-color;
